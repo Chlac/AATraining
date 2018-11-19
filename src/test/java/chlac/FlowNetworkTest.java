@@ -77,8 +77,8 @@ public class FlowNetworkTest {
 
     @Test
     public void findEdge() {
-        assertEquals(fn.findEdge("6", "2"), null);
-        assertEquals(fn.findEdge("1", "6"), null);
+        assertNull(fn.findEdge("6", "2"));
+        assertNull(fn.findEdge("1", "6"));
         assertEquals(fn.findEdge("1", "2").toString(), "1 - 0(1) - 2");
     }
 
